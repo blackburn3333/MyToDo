@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyToDo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Site.css">
+    <link rel="stylesheet" href="css/googleMatIcons.css">
+</head>
+<body>
+
+<div class="container baseSet" style="margin-top: 10vh;height: 70vh;overflow-y: scroll">
+    <div class="row" style="height: 10vh">
+        <div class="col-md-4 text-uppercase offset-md-4" style="">
+            <p class="titleSets text-center ">ToDo list</p>
+            <input class="todoInput" placeholder="Type and Enter" value="" id="toDoName" type="text" />
+            <hr />
+                <div id="toDoListView" style=""></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footerBG" style="margin-bottom: 5vh;background-color: white">
+    <footer class="text-uppercase">
+        <div class="col-md-6 text-center offset-md-3 Sitefooter">
+            <p>&copy; <span id="Year"></span> MyToDo. All rights reserved</p>
+            <a href="https://www.facebook.com/jayendramatarege" target="_blank"><img src="images/social_images/if_facebook_online_social_media_734399.png" class="img-fluid footerImage" /></a>
+            <a href="https://github.com/blackburn3333" target="_blank"><img src="images/social_images/if_github_social_media_logo_1221583.png" class="img-fluid footerImage" /></a>
+            <a href="https://www.instagram.com/_____syntax_error_____/" target="_blank"><img src="images/social_images/if_instagram_online_social_media_734394.png" class="img-fluid footerImage" /></a>
+            <a href="https://www.linkedin.com/in/jayendra-matarage-a855ba95/" target="_blank"><img src="images/social_images/if_online_social_media_linked_in_734383.png" class="img-fluid footerImage" /></a>
+            <a href="https://www.tumblr.com/blog/burn333348" target="_blank"><img src="images/social_images/if_tumblr_online_social_media_734368.png" class="img-fluid footerImage" /></a>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("Year").innerHTML = n;
+
+</script>
+<script>
+    $("#toDoName").keypress(function (event) {
+        if (event.which == 13) {
+            if (document.getElementById('toDoName').value == "" || null) {
+                document.getElementById('toDoName').className = "TodoError";
+            } else {
+                addToDo(document.getElementById('toDoName').value);
+            }
+        }
+    });
+</script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/addTodo.js"></script>
+</body>
+</html>

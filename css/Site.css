@@ -1,0 +1,74 @@
+@font-face {
+    font-family: LilyScript;
+    src: url(../fonts/LilyScriptOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Fjalla_One;
+    src: url(../fonts/Fjalla_One/FjallaOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald/Oswald-Regular.ttf) format('truetype');
+}
+.titleSets {
+    font-family: Oswald;
+}
+
+.todoName {
+    font-size:15px;
+    font-family: Oswald;
+}
+.deletespan {
+    font-size: 15px;
+    cursor: pointer;
+}
+.deletespan:hover{
+    color:red;
+}
+.todoTable{
+    overflow: scroll;
+}
+.todoTable td {
+    padding: 0px;
+    border: none;
+}
+.todoTable tr {
+    border: none;
+}
+.maincell{
+    width:80%;
+}
+.todoInput {
+    font-family: Oswald;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #0094ff;
+}
+.TodoError {
+    font-family: Oswald;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+}
+
+.footerBG {
+    font-family: Oswald;
+}
+.Sitefooter {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.footerImage {
+    width: 6%;
+}
+
+.baseSet {
+    height: 85vh;
+}
